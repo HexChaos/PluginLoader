@@ -1,0 +1,5 @@
+*.opensdf
+*.sln
+*.vcxproj
+PluginLoader.vcxproj.user
+*.filters
