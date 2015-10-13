@@ -1,0 +1,12 @@
+# Ayrias API rev 2015
+
+The programming interface for 2015 revolves around reducing the number of exports.
+In earlier revisions a module could have 80 exports, which clutters the EAT.
+The new standard takes an integer and a variadic argument.
+
+Caller:
+	size_t FriendCount{};
+	Social_Friends(FNV1a_Compiletime("GetFriendCount", &FriendCount));
+Callee:
+	switch(Command)
+	case FNV1a_Compiletime("GetFriendCount"): return Social::Friends::Utility::FriendCount(CMD_Argv[0]);
