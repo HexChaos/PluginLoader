@@ -6,7 +6,7 @@ The new standard takes an integer and a variadic argument.
 
 Caller:
 	size_t FriendCount{};
-	Social_Friends(FNV1a_Compiletime("GetFriendCount", &FriendCount));
+	Social_Friends(FNV1a_Compiletime("GetFriendCount"), &FriendCount);
 Callee:
 	switch(Command)
 	case FNV1a_Compiletime("GetFriendCount"): return Social::Friends::Utility::FriendCount(CMD_Argv[0]);

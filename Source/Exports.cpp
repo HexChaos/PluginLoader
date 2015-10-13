@@ -9,6 +9,7 @@
 #include <string>
 #include <stdarg.h>
 #include "Hashing.h"
+#include "Warnings.h"
 
 // Interfaces for managing plugins.
 extern "C"
@@ -30,6 +31,16 @@ extern "C"
 
             /* const char *PluginName */
             case FNV1a_Compiletime("LoadByName"):
+                Result = /* TODO: Call func */ false;
+                break;
+
+            /* const char *PluginName */
+            case FNV1a_Compiletime("PreInitialization"):
+                Result = /* TODO: Call func */ false;
+                break;
+
+            /* const char *PluginName */
+            case FNV1a_Compiletime("PostInitialization"):
                 Result = /* TODO: Call func */ false;
                 break;
         }
@@ -88,6 +99,21 @@ extern "C"
 
             /* const char *PluginName, size_t *Result */
             case FNV1a_Compiletime("GetPluginHash"):
+                Result = /* TODO: Call func */ false;
+                break;
+
+            /* const char *PluginName, size_t *Count */
+            case FNV1a_Compiletime("GetDependencyCount"):
+                Result = /* TODO: Call func */ false;
+                break;
+
+            /* const char *PluginName, size_t Index, const char *Dependency */
+            case FNV1a_Compiletime("GetDependency"):
+                Result = /* TODO: Call func */ false;
+                break;
+
+            /* const char *PluginName, bool *Status */
+            case FNV1a_Compiletime("GetWhitelistStatus"):
                 Result = /* TODO: Call func */ false;
                 break;
         }
