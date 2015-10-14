@@ -16,3 +16,4 @@ Debug/Exports.obj
 *.pdb
 PluginLoader.sdf
 *.lib
+*.obj
