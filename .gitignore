@@ -3,3 +3,16 @@
 *.vcxproj
 PluginLoader.vcxproj.user
 *.filters
+*.suo
+Debug/Exports.obj
+*.dll
+*.exp
+*.log
+*.suo
+.vs/PluginLoader/v14/.suo
+*.idb
+*.ilk
+*.tlog
+*.pdb
+PluginLoader.sdf
+*.lib
