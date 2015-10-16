@@ -6,6 +6,7 @@
         Compiletime hashing of strings and runtime hashing of data.
 */
 
+#pragma once
 #include <stdlib.h>
 
 // FNV1 constants.
