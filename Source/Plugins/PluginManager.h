@@ -25,6 +25,7 @@ namespace PluginManager
     bool Int_LoadByName(va_list Variadic);
     bool Int_UnloadAll(va_list Variadic);
     bool Int_UnloadByName(va_list Variadic);
+    bool Int_IsLoaded(va_list Variadic);
 
     // Fetching information about a plugin.
     bool Int_AuthorName(va_list Variadic);

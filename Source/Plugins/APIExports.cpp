@@ -40,6 +40,7 @@ extern "C"
     EXPORTFUNCTION("LoadByName", [](va_list Placeholder) { return false; });        // const char *Pluginname
     EXPORTFUNCTION("UnloadAll", [](va_list Placeholder) { return false; });         // No arguments
     EXPORTFUNCTION("UnloadByName", [](va_list Placeholder) { return false; });      // const char *Pluginname
+    EXPORTFUNCTION("IsLoaded", [](va_list Placeholder) { return false; });          // const char *Pluginname
     EXPORTEND;
 
     // Fetching information about a plugin.
