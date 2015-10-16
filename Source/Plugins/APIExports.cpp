@@ -6,8 +6,8 @@
         API to be called from other applications.
 */
 
-#include <string>
 #include <stdarg.h>
+#include "..\Warnings.h"
 #include "..\Utility\FNVHash.h"
 
 // Macros to make it more readable.
